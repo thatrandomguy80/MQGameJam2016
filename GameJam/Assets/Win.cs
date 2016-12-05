@@ -9,7 +9,7 @@ public class Win : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider other){
-		if (other.tag = "Object") {
+		if (other.tag == "Object") {
 			
 		}
 	}
