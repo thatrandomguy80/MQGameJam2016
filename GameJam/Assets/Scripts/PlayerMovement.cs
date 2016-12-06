@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour {
     public float rotateSpeed = 4f;
 
 
+
+	private bool MouseLock = false;
     private CharacterController controller;
 
     void Start() {
@@ -38,11 +40,16 @@ public class PlayerMovement : MonoBehaviour {
         movementDir = transform.forward * Input.GetAxis("Vertical");
 
         //turning horizontal was changed to mouse movement in the editor
-        transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotateSpeed, 0));
-        movementDir *= Time.deltaTime * Speed;
+		if (!MouseLock) {
+			transform.Rotate (new Vector3 (0, Input.GetAxis ("Horizontal") * rotateSpeed, 0));
+		}
+		movementDir *= Time.deltaTime * Speed;
         controller.SimpleMove(movementDir);
 
         //strafe
         controller.SimpleMove(Input.GetAxis("Strafe") * transform.right * (Time.deltaTime * (0.75f * Speed)));
     }
+	public void LockMouse (){
+		MouseLock = !MouseLock;//apllies mouse lock during object roation from grabobject script.
+	}
 }
