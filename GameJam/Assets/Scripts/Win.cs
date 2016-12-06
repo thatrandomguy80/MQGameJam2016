@@ -20,10 +20,10 @@ public class Win : MonoBehaviour {
 		if (other.tag == objectsTagName) {
 			objectsInTrigger++;
 			objectsRemainingInLevel = objectsOnLevel - objectsInTrigger;
-			GameState.objectsRemaining = objectsRemaingInLevel;
+			GameState.objectsRemaining = objectsRemainingInLevel;
 			//win check
 			if (objectsRemainingInLevel == 0) {
-				GameState.HasWon = true;
+				GameState.hasWon = true;
 			}
 		}
 	}
@@ -31,7 +31,7 @@ public class Win : MonoBehaviour {
 		if (other.tag == objectsTagName) {
 			objectsInTrigger--;
 			objectsRemainingInLevel = objectsOnLevel - objectsInTrigger;
-			GameState.objectsRemaining = objectsRemaingInLevel;
+			GameState.objectsRemaining = objectsRemainingInLevel;
 		}
 	}
 }
