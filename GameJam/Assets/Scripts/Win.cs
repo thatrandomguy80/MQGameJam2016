@@ -14,13 +14,18 @@ public class Win : MonoBehaviour {
 	void Start () {
 		//find the number of Objects in level
 		objectsOnLevel = GameObject.FindGameObjectsWithTag (objectsTagName).Length;
-	}
+        //running this once at start for UI init - hm
+        objectsRemainingInLevel = objectsOnLevel - objectsInTrigger;
+        GameState.objectsRemaining = objectsRemainingInLevel;
+        Debug.Log(objectsRemainingInLevel);
+    }
 	//detects if an object is in the Trigger
 	void OnTriggerEnter(Collider other){
 		if (other.tag == objectsTagName) {
 			objectsInTrigger++;
 			objectsRemainingInLevel = objectsOnLevel - objectsInTrigger;
 			GameState.objectsRemaining = objectsRemainingInLevel;
+            Debug.Log(objectsRemainingInLevel);
 			//win check
 			if (objectsRemainingInLevel == 0) {
 				GameState.hasWon = true;
