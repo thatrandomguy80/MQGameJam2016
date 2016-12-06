@@ -6,6 +6,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 public class GravityAffector : MonoBehaviour {
 	public bool active = false;
+	public bool isChild = false;
 	private Rigidbody rb;
 	// Use this for initialization
 	void Start () {
@@ -15,10 +16,15 @@ public class GravityAffector : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (active) {
-			rb.AddForce ((Physics.gravity * -1) * rb.mass);
+		if (!isChild) {
+			GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.None;
+			if (active) {
+				rb.AddForce ((Physics.gravity * -1) * rb.mass);
+			} else {
+				rb.AddForce (Physics.gravity * rb.mass);
+			}
 		} else {
-			rb.AddForce (Physics.gravity * rb.mass);
+			GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezePosition;
 		}
 	}
 }
