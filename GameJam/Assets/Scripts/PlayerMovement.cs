@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float rotateSpeed = 4f;
 
 
-
+    [SerializeField]
     private bool MouseLock = false;
     private CharacterController controller;
 
@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         checkStopping();
+        LockMouse();
     }
 
     //trying to stop player from sliding after user stops input
@@ -82,6 +83,9 @@ public class PlayerMovement : MonoBehaviour
     }
     public void LockMouse()
     {
-        MouseLock = !MouseLock;//apllies mouse lock during object roation from grabobject script.
+        if (Input.GetKey(KeyCode.Q))
+            MouseLock = true;//apllies mouse lock during object roation from grabobject script.
+        else
+            MouseLock = false;
     }
 }

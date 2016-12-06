@@ -10,6 +10,9 @@ public class UIHandeler : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         amountInLevel = GameObject.FindGameObjectsWithTag("Objects").Length;
+
+        //need this for other non scripted section
+        //Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Water"), LayerMask.NameToLayer("Default"), true);
 	}
 	
 	// Update is called once per frame
