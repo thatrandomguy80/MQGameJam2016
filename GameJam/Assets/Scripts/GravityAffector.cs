@@ -24,7 +24,7 @@ public class GravityAffector : MonoBehaviour {
 				rb.AddForce (Physics.gravity * rb.mass);
 			}
 		} else {
-			GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezePosition;
+			GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.FreezeAll;
 		}
 	}
 }

@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
 
         return false;
     }
-    public void LockMouse()
+    private void LockMouse()
     {
         if (Input.GetKey(KeyCode.Q))
             MouseLock = true;//apllies mouse lock during object roation from grabobject script.

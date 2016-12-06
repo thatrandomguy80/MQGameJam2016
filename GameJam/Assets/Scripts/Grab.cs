@@ -25,7 +25,8 @@ public class Grab : MonoBehaviour {
 	public GameObject heldObject = null;
 	public bool grabbing = false;
 	public string objectsTagName = "Objects";
-	private GameObject firstobject;
+    public GunManager gunManager;//added -hm
+    private GameObject firstobject;
 	public GameObject snapPoint;
 	//rotation
 	//public GameObject Test; // to test grab rotation
@@ -63,7 +64,7 @@ public class Grab : MonoBehaviour {
 			*       set the position of the object(pickup) to a "lock on spot"
 			*       set currently grabbing flag.*/
 		// implement a movetowards in the update and an objectlook when grabbng, remove these when object leaves trigger
-		if(Input.GetKeyDown(KeyCode.E)){
+		if(Input.GetMouseButtonDown(0) && gunManager.currMode.ID == "grab"){//changed this for new control scheme-hm
 			
 			if (grabbing == false && currentObject != null) {
 				//print ("testing key press");
@@ -91,13 +92,13 @@ public class Grab : MonoBehaviour {
 			else if (grabbing && currentObject != null) {
 				currentObject.GetComponent<BoxCollider>().enabled = true;
 				currentObject.GetComponent<GravityAffector>().isChild = false;
-				this.transform.DetachChildren ();
+                currentObject.transform.parent = null;
 				print ("Detach");
 				grabbing = false;
 			}
 		}
 		if (grabbing == true && currentObject != null) {
-			currentObject.transform.position = snapPoint.transform.position;
+			currentObject.transform.parent = snapPoint.transform;
 		}
 		//rotation
 		if(Input.GetKey(KeyCode.Q)){
