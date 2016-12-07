@@ -4618,6 +4618,8 @@ MonoBehaviour:
   objectsTagName: Objects
   gunManager: {fileID: 527805092}
   snapPoint: {fileID: 993296764}
+  speed: 5
+  stopMove: 0
 --- !u!65 &525204091
 BoxCollider:
   m_ObjectHideFlags: 0
