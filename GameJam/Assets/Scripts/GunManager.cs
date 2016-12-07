@@ -5,10 +5,15 @@ using System.Collections;
 //Description: Sets gun mode in this order grab>shrink>grow>grab
 public class GunManager : MonoBehaviour {
 
-    public GunMode shrink,grow,grab;
+    public GameObject auroa;
+    public Grab grabber;
+
+    public GunMode shrink, grow, grab;
 
     [HideInInspector]
     public GunMode currMode;
+
+
 
     // Use this for initialization
     void Start() {
@@ -18,24 +23,28 @@ public class GunManager : MonoBehaviour {
         //init
         currMode = grab;
         grab.setActive();
+
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+    void Update() {
+        //could be more efficent here but meh
+        if (currMode == grab) {
+            auroa.SetActive(true);
+        } else {
+            auroa.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.E) && (!(currMode == grab && grabber.grabbing == true))) {
             currMode.ChangeMode();
             currMode = currMode.nextMode;
         }
     }
 
-    
+
 }
 
 [System.Serializable]
-public class GunMode
-{
+public class GunMode {
     public string ID;
     public MeshRenderer meshR;
     public Light light;
@@ -43,22 +52,19 @@ public class GunMode
     public GunMode nextMode;
 
 
-    public void setActive()
-    {
+    public void setActive() {
         //turn on light and color the object.
         light.enabled = true;
         meshR.material = mat;
     }
 
-    public void setInActive()
-    {
+    public void setInActive() {
         //turn off light and object color.
         light.enabled = false;
         meshR.material = defaultMat;
     }
 
-    public void ChangeMode()
-    {
+    public void ChangeMode() {
         setInActive();
         nextMode.setActive();
     }

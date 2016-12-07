@@ -21,8 +21,5 @@ public class Bullet : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter()
-    {
-        Destroy(this.gameObject);
-    }
+
 }
