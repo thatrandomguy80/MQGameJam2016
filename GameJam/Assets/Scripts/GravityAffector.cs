@@ -5,7 +5,7 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
 public class GravityAffector : MonoBehaviour {
-	public bool active = false;
+    public bool Active = false, reverse = false;
 	public bool isChild = false;
 	private Rigidbody rb;
 	// Use this for initialization
@@ -16,11 +16,13 @@ public class GravityAffector : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+        Active = GameState.GravOn; // starts false.
 		if (!isChild) {
 			GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.None;
-			if (active) {
+			if (reverse) {
 				rb.AddForce ((Physics.gravity * -1) * rb.mass);
-			} else {
+			}
+            if (Active) {
 				rb.AddForce (Physics.gravity * rb.mass);
 			}
 		} else {

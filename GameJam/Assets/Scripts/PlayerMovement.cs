@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 movementDir = Vector3.zero;
         //forward movement
-        movementDir = transform.forward * Input.GetAxis("Vertical");
+        movementDir = transform.forward * Input.GetAxis("Vertical");//don't allow vertical movement??
 
         //turning horizontal was changed to mouse movement in the editor
         if (!MouseLock)

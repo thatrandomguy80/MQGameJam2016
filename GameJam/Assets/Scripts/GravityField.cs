@@ -12,9 +12,9 @@ public class GravityField : MonoBehaviour
         if (other.gameObject.tag == "Objects")
         {
             GravityAffector otherGA = other.gameObject.GetComponent<GravityAffector>();
-            if (!otherGA.active)
+            if (!otherGA.reverse)
             {
-                otherGA.active = true;
+                otherGA.reverse = true;
             }
         }
     }
@@ -25,9 +25,9 @@ public class GravityField : MonoBehaviour
         if (other.gameObject.tag == "Objects")
         {
             GravityAffector otherGA = other.gameObject.GetComponent<GravityAffector>();
-            if (otherGA.active)
+            if (otherGA.reverse)
             {
-                otherGA.active = false;
+                otherGA.reverse = false;
             }
         }
     }

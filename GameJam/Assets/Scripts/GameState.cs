@@ -8,6 +8,8 @@ public static class GameState {
     public static int objectsRemaining;
 
     public static bool hasWon = false;
+
+    public static bool GravOn = false;
     
 	// Update is called once per frame
 	//void Update () {
