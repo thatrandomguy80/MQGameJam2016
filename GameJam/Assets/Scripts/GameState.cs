@@ -5,6 +5,8 @@ using System.Collections;
 //no longer mono
 public static class GameState {
 
+    public static int AmountOfDebris;
+
     public static int objectsRemaining;
 
     public static bool hasWon = false;

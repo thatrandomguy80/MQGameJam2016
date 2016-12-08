@@ -7,13 +7,14 @@ using System.Collections;
 public class ShrinRay : MonoBehaviour {
 
     public GameObject BulletPrefab;
-    public float shrinkAmount;
+    [Header("Only 1 of these at a time")]
     public bool grow = false, shrink = false;//if the scale change is positive or neg
 
     private GunManager gunManager;
     // Use this for initialization
     void Start() {
         gunManager = GetComponent<GunManager>();
+        if (grow && shrink) grow = !grow;
     }
 
     // Update is called once per frame
@@ -30,7 +31,7 @@ public class ShrinRay : MonoBehaviour {
                 if (Physics.Raycast(ray, out hit, 5)) {
                     Debug.Log("hit" + hit.collider.gameObject.name);
 
-                    if (hit.collider.gameObject.tag == "Objects")//if the ray hits a tagged object then apply scale changes
+                    if (hit.collider.gameObject.tag == "Objects" && hit.collider.gameObject.GetComponent<Object>() != null)//if the ray hits a tagged object then apply scale changes
                     {
                         applyScaling(hit.collider.gameObject);
                     }
@@ -42,10 +43,16 @@ public class ShrinRay : MonoBehaviour {
     }
 
     public void applyScaling(GameObject GO) {
-        if (grow) {
-            GO.transform.localScale += new Vector3(shrinkAmount, shrinkAmount, shrinkAmount);
-        } else if (shrink) {
-            GO.transform.localScale -= new Vector3(shrinkAmount, shrinkAmount, shrinkAmount);
+        Object objScript = GO.GetComponent<Object>();
+        if (grow && objScript.ScaleUp) {
+            GO.transform.localScale += new Vector3(objScript.ScaleUpAmount, objScript.ScaleUpAmount, objScript.ScaleUpAmount);
+            objScript.ScaleUp = false;
+            objScript.ScaleDown = true;
+        } else if (shrink && objScript.ScaleDown) {
+            GO.transform.localScale -= new Vector3(objScript.ScaleDownAmount, objScript.ScaleDownAmount, objScript.ScaleDownAmount);
+            objScript.ScaleDown = false;
+            objScript.ScaleUp = true;
+
         }
     }
 }
