@@ -8,7 +8,8 @@ public class Button : MonoBehaviour {
 
     public Material defaultMat, highListMat;
     public GameObject Player;
-
+    [Header("Always set to button and set Layer to button")]
+    public LayerMask LM;
     private bool tick = true;
     // Use this for initialization
     void Start() {
@@ -25,7 +26,7 @@ public class Button : MonoBehaviour {
             Debug.DrawRay(Player.transform.position, Player.transform.forward * 5, Color.blue, 10);
             Ray ray = new Ray(Player.transform.position, Player.transform.forward);
             RaycastHit hit;
-            if (Physics.SphereCast(ray, 1.5f, out hit, 0.5f)) {
+            if (Physics.SphereCast(ray, 1.5f, out hit, 0.5f,LM)) {
                 if (hit.collider.gameObject.transform == transform) {
 
 

@@ -13,7 +13,7 @@ public class GunManager : MonoBehaviour {
     [HideInInspector]
     public GunMode currMode;
 
-    private Vector3 defaultPos;
+    public Transform defaultPos,RightLock;
 
 
     // Use this for initialization
@@ -25,15 +25,14 @@ public class GunManager : MonoBehaviour {
         //init
         currMode = grab;
         grab.setActive();
-        defaultPos = auroa.transform.position;
     }
 
     // Update is called once per frame
     void Update() {
         if (grabber.grabbing) {
-            auroa.transform.position = defaultPos + transform.right;
+            auroa.transform.position = RightLock.position;
         }else {
-            auroa.transform.position = defaultPos;
+            auroa.transform.position = defaultPos.position;
         }
         //could be more efficent here but meh
         if (currMode == grab) {
@@ -76,11 +75,6 @@ public class GunMode {
 
     public void ChangeMode() {
         setInActive();
-        if (nextMode.unLocked)
             nextMode.setActive();
-        else if (nextMode.nextMode.unLocked)
-            nextMode.nextMode.setActive();
-        else
-            setActive();
     }
 }
