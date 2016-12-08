@@ -9,6 +9,7 @@ public class Compactor : MonoBehaviour {
 
     public GameObject bail;
     public int AmountOfItems;
+    public LightScript[] Lights;
 
     public GameObject door, doorOpenLoc, doorClosePos;
 
@@ -37,7 +38,6 @@ public class Compactor : MonoBehaviour {
     }
 
     public IEnumerator bailParts() {//enumerable allows wait timer it's a form of cuncurrency 
-        Debug.Log("Cor");
         //delete items
         foreach (GameObject g in items) {
             //items.Remove(g);
@@ -46,13 +46,17 @@ public class Compactor : MonoBehaviour {
         //spawn bail
         Instantiate(bail, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.5f);
-        Debug.Log("AfterCoutner");
+        //reset lighst
+        foreach (LightScript l in Lights) {
+            l.SwitchLight();
+        }
         opening = true;
     }
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.GetComponent<Debris>() != null) {
             items.Add(other.gameObject);
+            updateLights();//must do before adding
             AmountOfItems++;
         }
     }
@@ -61,7 +65,13 @@ public class Compactor : MonoBehaviour {
         if (items.Contains(other.gameObject)) {
             items.Remove(other.gameObject);
             AmountOfItems--;
+            updateLights(); //needs to be after --
         }
+    }
+
+    private void updateLights() {
+        if (AmountOfItems <= 4)
+            Lights[AmountOfItems].SwitchLight();
     }
 
     public void Compact() {
