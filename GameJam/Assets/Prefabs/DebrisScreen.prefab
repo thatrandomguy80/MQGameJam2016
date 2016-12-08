@@ -9,18 +9,18 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000010661279326}
+  m_RootGameObject: {fileID: 1000011243349142}
   m_IsPrefabParent: 1
---- !u!1 &1000010661279326
+--- !u!1 &1000011243349142
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000010427396636}
-  - 33: {fileID: 33000012364912194}
-  - 23: {fileID: 23000013939088656}
+  - 4: {fileID: 4000011113730056}
+  - 33: {fileID: 33000011509129698}
+  - 23: {fileID: 23000013628532378}
   m_Layer: 0
   m_Name: DebrisScreen
   m_TagString: Untagged
@@ -28,17 +28,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1000013048942756
+--- !u!1 &1000013505205802
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000013423868822}
-  - 33: {fileID: 33000011534664450}
-  - 23: {fileID: 23000012649771460}
-  - 64: {fileID: 64000011914340142}
+  - 4: {fileID: 4000013514426538}
+  - 33: {fileID: 33000011474699394}
+  - 23: {fileID: 23000010611283546}
+  - 64: {fileID: 64000011095033350}
   m_Layer: 0
   m_Name: DebrisScreenCollider
   m_TagString: Untagged
@@ -46,39 +46,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000010427396636
+--- !u!4 &4000011113730056
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010661279326}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -32.71, y: 3.78, z: -33.06}
-  m_LocalScale: {x: 0.5172928, y: 0.5172928, z: 0.5172928}
+  m_GameObject: {fileID: 1000011243349142}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 48.462494, y: -2.7012796, z: -60.331833}
+  m_LocalScale: {x: 51.72928, y: 51.72928, z: 51.72928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4000013423868822}
+  - {fileID: 4000013514426538}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &4000013423868822
+--- !u!4 &4000013514426538
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013048942756}
+  m_GameObject: {fileID: 1000013505205802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0792595, y: 0.0038640434, z: 0.8254511}
-  m_LocalScale: {x: 0.10932863, y: 1.4302282, z: 0.10932866}
+  m_LocalPosition: {x: -0.00062814704, y: 0.00015294284, z: 0.008237492}
+  m_LocalScale: {x: 0.10932861, y: 1.4302275, z: 0.10932859}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4000010427396636}
+  m_Father: {fileID: 4000011113730056}
   m_RootOrder: 0
---- !u!23 &23000012649771460
+--- !u!23 &23000010611283546
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013048942756}
+  m_GameObject: {fileID: 1000013505205802}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,7 +86,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcbcbce6709dc8a42b0a06d6445c7005, type: 2}
+  - {fileID: 2100000, guid: db06df9ee84fbe44181bd1bd5fc783e5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -102,12 +102,12 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!23 &23000013939088656
+--- !u!23 &23000013628532378
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010661279326}
+  m_GameObject: {fileID: 1000011243349142}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -115,9 +115,9 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 69f9f93adeaa4fb49b27e1ebf44b2514, type: 2}
-  - {fileID: 2100000, guid: c1b31b9db5b9659458ac89fc3af01633, type: 2}
-  - {fileID: 2100000, guid: b608e890cbc32f04981e042c4dd1f15e, type: 2}
+  - {fileID: 2100000, guid: 6624dfb3d132f3047a74776431d4fabe, type: 2}
+  - {fileID: 2100000, guid: 8931aaa71150fff439e063418cb1f841, type: 2}
+  - {fileID: 2100000, guid: bbc45fd1cd8ba28468f36bd7bf4a8e89, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -133,29 +133,29 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000011534664450
+--- !u!33 &33000011474699394
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013048942756}
-  m_Mesh: {fileID: 4300000, guid: a22a31e969f84ea4e901f0c13515fcf4, type: 3}
---- !u!33 &33000012364912194
+  m_GameObject: {fileID: 1000013505205802}
+  m_Mesh: {fileID: 4300000, guid: 288f47456c2846146a41d70729807514, type: 3}
+--- !u!33 &33000011509129698
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010661279326}
-  m_Mesh: {fileID: 4300000, guid: d6d3d7a7063db8b4aa18ee68d69ecc05, type: 3}
---- !u!64 &64000011914340142
+  m_GameObject: {fileID: 1000011243349142}
+  m_Mesh: {fileID: 4300000, guid: bea573be0536984449c3233ec84dfd63, type: 3}
+--- !u!64 &64000011095033350
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013048942756}
+  m_GameObject: {fileID: 1000013505205802}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: a22a31e969f84ea4e901f0c13515fcf4, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 288f47456c2846146a41d70729807514, type: 3}
