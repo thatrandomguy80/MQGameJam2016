@@ -4,7 +4,7 @@ using UnityEngine;
 //Author: Emily Cochrane
 //Descrition: detects when an Object is inside the Trigger and if all objects are inside then the Game Win's
 public class Win : MonoBehaviour {
-	
+    //public GameObject[] List;
 	public string objectsTagName;
 	private int objectsOnLevel;//only set once and can not be changed
 	public int objectsInTrigger = 0;
@@ -12,12 +12,12 @@ public class Win : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//find the number of Objects in level
-		objectsOnLevel = GameObject.FindGameObjectsWithTag (objectsTagName).Length;
+        //List =  GameObject.FindGameObjectsWithTag("Objects");
+        //find the number of Objects in level
+        objectsOnLevel = GameObject.FindGameObjectsWithTag("Objects").Length -1 - 4 - (GameState.AmountOfDebris/5)*4;//minus 4 for every 5 small parts also in UIHandeler
         //running this once at start for UI init - hm
         objectsRemainingInLevel = objectsOnLevel - objectsInTrigger;
         GameState.objectsRemaining = objectsRemainingInLevel;
-        Debug.Log(objectsRemainingInLevel);
     }
 	//detects if an object is in the Trigger
 	void OnTriggerEnter(Collider other){
