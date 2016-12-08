@@ -7,7 +7,6 @@ using System.Collections;
 public class ShrinRay : MonoBehaviour {
 
     public GameObject BulletPrefab;
-    [Header("Only 1 of these at a time")]
     public bool grow = false, shrink = false;//if the scale change is positive or neg
 
     private GunManager gunManager;
