@@ -309,7 +309,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014097307664}
   m_LocalRotation: {x: -0.99383426, y: -0.10251404, z: 0.028013416, w: 0.031617966}
-  m_LocalPosition: {x: 0.55, y: 2.2, z: -0.07}
+  m_LocalPosition: {x: 1.29, y: 2.45, z: -0.44}
   m_LocalScale: {x: 0.093283325, y: 0.12256062, z: 0.092032276}
   m_LocalEulerAnglesHint: {x: -85.136, y: -47.335003, z: 35.881}
   m_Children: []
@@ -362,7 +362,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013968048024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5202296, y: 1.05, z: -6.81}
+  m_LocalPosition: {x: -3.5202296, y: 1.11, z: -6.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -390,7 +390,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014190585824}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0431673, y: 2.24, z: -0.11}
+  m_LocalPosition: {x: 1.4, y: 2.24, z: -0.11}
   m_LocalScale: {x: 2.2789361, y: 2.2789345, z: 3.0745473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -436,7 +436,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012512766564}
   m_LocalRotation: {x: -0, y: -0, z: 0.56222725, w: 0.8269828}
-  m_LocalPosition: {x: -0.2, y: 2, z: -1.1}
+  m_LocalPosition: {x: -0.6, y: 2.1, z: -1.1}
   m_LocalScale: {x: 12.197313, y: 12.1973095, z: 12.19731}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -479,7 +479,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.00013428327, y: 0.00011330299, z: -0.37525606}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 80.50162, y: -148.78696, z: 31.215057}
   m_Children: []
   m_Father: {fileID: 4000013795787150}
   m_RootOrder: 0
@@ -800,7 +800,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5, z: 1.5}
-  m_Center: {x: 0, y: 0, z: 0.23}
+  m_Center: {x: -0.58, y: 0, z: 0.23}
 --- !u!81 &81000011499965350
 AudioListener:
   m_ObjectHideFlags: 1
@@ -824,7 +824,7 @@ Animator:
   m_GameObject: {fileID: 1000010218110546}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 57385c6faad27d44a9337c595eaf7afc, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0bb9f2319b04c3a44bc2bbde17887b2a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1371,7 +1371,7 @@ ParticleSystem:
       maxColor: {r: 0, g: 0.60784316, b: 0.972549, a: 1}
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
