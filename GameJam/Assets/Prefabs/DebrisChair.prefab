@@ -216,7 +216,7 @@ MonoBehaviour:
   ScaleUp: 0
   ScaleDown: 1
   ScaleUpAmount: 0
-  ScaleDownAmount: 3
+  ScaleDownAmount: 8
 --- !u!114 &114000013030288726
 MonoBehaviour:
   m_ObjectHideFlags: 1
