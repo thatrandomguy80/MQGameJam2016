@@ -20,12 +20,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013643702606}
   m_Layer: 0
-  m_Name: 
+  m_Name: SnapPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000011274265700
 GameObject:
   m_ObjectHideFlags: 1
@@ -36,12 +36,12 @@ GameObject:
   - 4: {fileID: 4000010377277622}
   - 108: {fileID: 108000012739420928}
   m_Layer: 0
-  m_Name: 
+  m_Name: Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000011628429096
 GameObject:
   m_ObjectHideFlags: 1
@@ -54,12 +54,12 @@ GameObject:
   - 65: {fileID: 65000013019341630}
   - 114: {fileID: 114000010098704218}
   m_Layer: 2
-  m_Name: 
+  m_Name: GrabArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000011768269892
 GameObject:
   m_ObjectHideFlags: 1
@@ -72,12 +72,12 @@ GameObject:
   - 199: {fileID: 199000012670810974}
   - 108: {fileID: 108000010238732034}
   m_Layer: 0
-  m_Name: 
+  m_Name: Auroa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000011997429922
 GameObject:
   m_ObjectHideFlags: 1
@@ -90,12 +90,12 @@ GameObject:
   - 136: {fileID: 136000014071361852}
   - 23: {fileID: 23000012856976050}
   m_Layer: 0
-  m_Name: 
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012238007580
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,12 +109,12 @@ GameObject:
   - 124: {fileID: 124000013245041096}
   - 81: {fileID: 81000012381259844}
   m_Layer: 0
-  m_Name: 
-  m_TagString: Untagged
+  m_Name: Main Camera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012382958294
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,11 +131,11 @@ GameObject:
   - 114: {fileID: 114000010598406554}
   m_Layer: 0
   m_Name: NewCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012458403202
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,12 +150,12 @@ GameObject:
   - 114: {fileID: 114000013542705890}
   - 114: {fileID: 114000014209001698}
   m_Layer: 0
-  m_Name: 
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012464096546
 GameObject:
   m_ObjectHideFlags: 1
@@ -166,12 +166,12 @@ GameObject:
   - 4: {fileID: 4000010182062888}
   - 108: {fileID: 108000013892299234}
   m_Layer: 0
-  m_Name: 
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012742003988
 GameObject:
   m_ObjectHideFlags: 1
@@ -184,12 +184,12 @@ GameObject:
   - 136: {fileID: 136000013970931896}
   - 23: {fileID: 23000013646322386}
   m_Layer: 0
-  m_Name: 
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012985359686
 GameObject:
   m_ObjectHideFlags: 1
@@ -201,12 +201,12 @@ GameObject:
   - 33: {fileID: 33000011551553040}
   - 23: {fileID: 23000010159549614}
   m_Layer: 0
-  m_Name: 
+  m_Name: GunFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012988598004
 GameObject:
   m_ObjectHideFlags: 1
@@ -217,12 +217,12 @@ GameObject:
   - 4: {fileID: 4000014088954292}
   - 108: {fileID: 108000012820114140}
   m_Layer: 0
-  m_Name: 
+  m_Name: Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013369851462
 GameObject:
   m_ObjectHideFlags: 1
@@ -232,12 +232,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011707893750}
   m_Layer: 0
-  m_Name: 
+  m_Name: GunModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013603882222
 GameObject:
   m_ObjectHideFlags: 1
@@ -250,12 +250,12 @@ GameObject:
   - 136: {fileID: 136000012971994594}
   - 23: {fileID: 23000013778039890}
   m_Layer: 0
-  m_Name: 
+  m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013698094024
 GameObject:
   m_ObjectHideFlags: 1
@@ -265,12 +265,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011850587236}
   m_Layer: 0
-  m_Name: 
+  m_Name: DefaultAPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013717594868
 GameObject:
   m_ObjectHideFlags: 1
@@ -280,12 +280,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012880797244}
   m_Layer: 0
-  m_Name: 
+  m_Name: RightAPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000013873323166
 GameObject:
   m_ObjectHideFlags: 1
@@ -297,12 +297,12 @@ GameObject:
   - 33: {fileID: 33000010952554494}
   - 23: {fileID: 23000010809338236}
   m_Layer: 0
-  m_Name: 
+  m_Name: GunBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4000010182062888
 Transform:
   m_ObjectHideFlags: 1
@@ -418,7 +418,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012985359686}
-  m_LocalRotation: {x: -0.7071069, y: 0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.00013428327, y: 0.00011331939, z: -0.37525603}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -453,7 +453,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013873323166}
-  m_LocalRotation: {x: -0.7071069, y: 0, z: -0, w: 0.70710677}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.05009577, y: 0.061049428, z: 0.651836}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -519,7 +519,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012382958294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1217346, y: 1, z: -5.325719}
+  m_LocalPosition: {x: -3.5202296, y: 1.11, z: -6.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 207.87599, z: 0}
   m_Children:
@@ -1023,7 +1023,6 @@ MonoBehaviour:
   heldObject: {fileID: 0}
   grabbing: 0
   objectsTagName: Objects
-  objectsTagName2: Part
   gunManager: {fileID: 114000014209001698}
   snapPoint: {fileID: 1000011114173594}
   speed: 5
@@ -1053,11 +1052,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5679d7234e085e4b9e2ad9776e16b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletPrefab: {fileID: 158807004, guid: 8dfc99d4069fe0641816c6aac0e5c253, type: 2}
-  shrinkAmount: 0
+  BulletPrefab: {fileID: 1000012748015044, guid: 8dfc99d4069fe0641816c6aac0e5c253,
+    type: 2}
   grow: 0
   shrink: 0
-  gunManager: {fileID: 0}
 --- !u!114 &114000014209001698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1069,7 +1067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58307095e7b6cb14ca0fc94822fa14fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GunModel: {fileID: 0}
   auroa: {fileID: 1000011768269892}
   grabber: {fileID: 114000010098704218}
   shrink:
@@ -1098,8 +1095,6 @@ MonoBehaviour:
     defaultMat: {fileID: 0}
   defaultPos: {fileID: 4000011850587236}
   RightLock: {fileID: 4000012880797244}
-  GunPos: {fileID: 0}
-  RecoilPos: {fileID: 0}
 --- !u!124 &124000013245041096
 Behaviour:
   m_ObjectHideFlags: 1
@@ -1208,7 +1203,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011768269892}
-  serializedVersion: 4
+  serializedVersion: 2
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -1246,13 +1241,12 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
+  randomSeed: 1111302376
   looping: 1
   prewarm: 1
   playOnAwake: 1
-  moveWithTransform: 0
-  autoRandomSeed: 0
+  moveWithTransform: 1
   scalingMode: 1
-  randomSeed: 1111302400
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -1628,7 +1622,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     randomizeRotationDirection: 1
-    gravityModifier: NaN
+    gravityModifier: 0
     maxNumParticles: 1000
     size3D: 0
     rotation3D: 0
@@ -1657,7 +1651,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 10
+      scalar: 28.3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2970,7 +2964,6 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2979,7 +2972,7 @@ ParticleSystemRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedWireframeHidden: 1
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89

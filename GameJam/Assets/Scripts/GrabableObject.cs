@@ -7,7 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(GravityAffector))]
 [RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(MeshRenderer))]
-public class ObjectTest : MonoBehaviour {
+public class GrabableObject : MonoBehaviour {
     [Header("Can they Scale? only 1 at a time please")]
     public bool ScaleUp, ScaleDown;//can they scale?
     [Header("by how much")]

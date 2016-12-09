@@ -42,7 +42,7 @@ public class ShrinRay : MonoBehaviour {
     }
 
     public void applyScaling(GameObject GO) {
-        Object objScript = GO.GetComponent<Object>();
+        GrabableObject objScript = GO.GetComponent<GrabableObject>();
         if (grow && objScript.ScaleUp) {
             GO.transform.localScale += new Vector3(objScript.ScaleUpAmount, objScript.ScaleUpAmount, objScript.ScaleUpAmount);
             objScript.ScaleUp = false;

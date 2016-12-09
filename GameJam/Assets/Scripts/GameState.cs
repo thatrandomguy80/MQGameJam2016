@@ -19,10 +19,12 @@ public static class GameState {
      * fix rotating object problem. Might be fixed now.
      * rig all rooms with light. 
      * rig functional parts.
+     * restric velocity.
      * change ray shoot origin
      * 
      * 
      * wishlist
+     * reticle
      * add inital movement to items Done
      * animate shooting somehow. make recoil?. almost done needs tweaking.
      * animate button pushs Done

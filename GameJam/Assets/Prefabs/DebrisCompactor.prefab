@@ -347,7 +347,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014208347212}
   m_LocalRotation: {x: 0.5015679, y: -0.49842724, z: 0.49842724, w: 0.5015679}
-  m_LocalPosition: {x: 1.195, y: 1.9636989, z: -1.579}
+  m_LocalPosition: {x: 1.13, y: 1.9636989, z: -1.56}
   m_LocalScale: {x: 0.17129746, y: 0.030346258, z: 0.17129761}
   m_LocalEulerAnglesHint: {x: 89.981, y: 0, z: -74.297005}
   m_Children: []
@@ -360,7 +360,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010704259886}
   m_LocalRotation: {x: 0.5015679, y: -0.49842724, z: 0.49842724, w: 0.5015679}
-  m_LocalPosition: {x: 1.205, y: 1.9636989, z: -1.169}
+  m_LocalPosition: {x: 1.104, y: 1.9636989, z: -1.14}
   m_LocalScale: {x: 0.17129746, y: 0.030346258, z: 0.17129761}
   m_LocalEulerAnglesHint: {x: 89.981, y: 0, z: -74.297005}
   m_Children: []
@@ -399,7 +399,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010861115498}
   m_LocalRotation: {x: 0.5015679, y: -0.49842724, z: 0.49842724, w: 0.5015679}
-  m_LocalPosition: {x: 1.205, y: 1.9636989, z: -1.369}
+  m_LocalPosition: {x: 1.14, y: 1.9636989, z: -1.35}
   m_LocalScale: {x: 0.17129746, y: 0.030346258, z: 0.17129761}
   m_LocalEulerAnglesHint: {x: 89.981, y: 0, z: -74.297005}
   m_Children: []
@@ -412,7 +412,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013079482756}
   m_LocalRotation: {x: 0.5015679, y: -0.49842724, z: 0.49842724, w: 0.5015679}
-  m_LocalPosition: {x: 1.195, y: 1.9636989, z: -1.799}
+  m_LocalPosition: {x: 1.13, y: 1.9636989, z: -1.78}
   m_LocalScale: {x: 0.17129746, y: 0.030346258, z: 0.17129761}
   m_LocalEulerAnglesHint: {x: 89.981, y: 0, z: -74.297005}
   m_Children: []
@@ -451,7 +451,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012839439772}
   m_LocalRotation: {x: 0.5015679, y: -0.49842724, z: 0.49842724, w: 0.5015679}
-  m_LocalPosition: {x: 1.205, y: 1.9636989, z: -0.939}
+  m_LocalPosition: {x: 1.14, y: 1.9636989, z: -0.92}
   m_LocalScale: {x: 0.17129746, y: 0.030346258, z: 0.17129761}
   m_LocalEulerAnglesHint: {x: 89.981, y: 0, z: -74.297005}
   m_Children: []
@@ -496,7 +496,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010861115498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -583,7 +583,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012839439772}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -612,7 +612,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013079482756}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -641,7 +641,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010704259886}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -707,7 +707,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: db06df9ee84fbe44181bd1bd5fc783e5, type: 2}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -729,7 +729,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014208347212}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -1106,6 +1106,7 @@ MonoBehaviour:
   defaultMat: {fileID: 2100000, guid: 911375d008657904abe4b818bcdc334c, type: 2}
   highListMat: {fileID: 2100000, guid: cc7fb6dbd16879f4e8cfef8e2ec2b374, type: 2}
   Player: {fileID: 0}
+  MoveVector: {x: 0, y: 0, z: 0}
   LM:
     serializedVersion: 2
     m_Bits: 1024
@@ -1121,7 +1122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe297d10bf8d0f4188b4ab5d9ed7939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bail: {fileID: 1000013579135584, guid: b37d5e44e2f89d445ae8ddaead9b5be6, type: 2}
+  bail: {fileID: 1000011403685816, guid: ac0d585e563f08648ac269e0e62ef030, type: 2}
   AmountOfItems: 0
   Lights:
   - {fileID: 114000013942684584}
