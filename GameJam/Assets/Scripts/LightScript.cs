@@ -56,14 +56,12 @@ public class LightScript : MonoBehaviour {
         }
     }
     private void turnOn() {
-        Debug.Log(gameObject.name + "Toggled on");
         state = true;
         light.enabled = true;
         MR.material = Lit;
     }
 
     private void turnOff() {
-        Debug.Log(gameObject.name + "Toggled off");
         state = false;
         light.enabled = false;
         MR.material = Def;

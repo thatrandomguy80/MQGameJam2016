@@ -21,6 +21,7 @@ public static class GameState {
      * rig functional parts.
      * restric velocity.
      * change ray shoot origin
+     * sprint?
      * 
      * 
      * wishlist

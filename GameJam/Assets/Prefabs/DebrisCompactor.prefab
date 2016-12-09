@@ -74,7 +74,9 @@ GameObject:
   - 4: {fileID: 4000012813877614}
   - 33: {fileID: 33000011126084666}
   - 23: {fileID: 23000013610129092}
-  m_Layer: 0
+  - 65: {fileID: 65000013039052784}
+  - 114: {fileID: 114000011323199878}
+  m_Layer: 10
   m_Name: ButtonModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011726992428
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +274,7 @@ GameObject:
   - 4: {fileID: 4000012948602988}
   - 33: {fileID: 33000013619516886}
   - 23: {fileID: 23000012499572300}
+  - 65: {fileID: 65000010195126660}
   m_Layer: 0
   m_Name: DoorModel
   m_TagString: Untagged
@@ -324,8 +327,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013316716418}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.599997, y: -3.0419858, z: -13.53}
+  m_LocalRotation: {x: -0, y: 0.98980975, z: -0, w: 0.14239629}
+  m_LocalPosition: {x: 3.317, y: 0.06, z: -2.7583}
   m_LocalScale: {x: 0.664568, y: 0.66456795, z: 0.66456795}
   m_LocalEulerAnglesHint: {x: 0, y: 163.93701, z: 0}
   m_Children:
@@ -443,7 +446,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011044664946}
   m_LocalRotation: {x: 0.5013798, y: -0.4986164, z: 0.49861634, w: 0.50137997}
-  m_LocalPosition: {x: 1.211, y: 1.974, z: -2.084}
+  m_LocalPosition: {x: 1.239, y: 1.974, z: -2.084}
   m_LocalScale: {x: 0.2967275, y: 0.05256682, z: 0.29672757}
   m_LocalEulerAnglesHint: {x: 89.981, y: 0, z: 89.693}
   m_Children: []
@@ -900,6 +903,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 23e75d5ed996c2745b5f94aeb5c61832, type: 3}
+--- !u!65 &65000010195126660
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014235967794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0010518401, y: 0.047380514, z: 0.05565144}
+  m_Center: {x: -0.000042119922, y: -0.0000000027952232, z: -0.0006339737}
 --- !u!65 &65000012190554046
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -912,6 +927,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65000013039052784
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010743727892}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002123002, y: 0.0063439216, z: 0.006081434}
+  m_Center: {x: 0.011282766, y: 0.016760085, z: -0.005593827}
 --- !u!108 &108000010414711278
 Light:
   m_ObjectHideFlags: 1
@@ -1130,6 +1157,25 @@ MonoBehaviour:
   Def: {fileID: 2100000, guid: 980107a487bb71c4b9628cf3401e0177, type: 2}
   Lit: {fileID: 2100000, guid: 911375d008657904abe4b818bcdc334c, type: 2}
   statingState: 0
+  flickering: 0
+--- !u!114 &114000011323199878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010743727892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ddfbb7602993c148aa921dcb9607c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMat: {fileID: 2100000, guid: 024f07959dc534142b89b7e81da81ab5, type: 2}
+  Player: {fileID: 0}
+  MoveVector: {x: 0.2, y: 0, z: 0}
+  LM:
+    serializedVersion: 2
+    m_Bits: 1024
+  compScript: {fileID: 114000013029907840}
 --- !u!114 &114000011331146866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1144,6 +1190,7 @@ MonoBehaviour:
   Def: {fileID: 2100000, guid: 980107a487bb71c4b9628cf3401e0177, type: 2}
   Lit: {fileID: 2100000, guid: 911375d008657904abe4b818bcdc334c, type: 2}
   statingState: 0
+  flickering: 0
 --- !u!114 &114000012071157520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1158,6 +1205,7 @@ MonoBehaviour:
   Def: {fileID: 2100000, guid: 980107a487bb71c4b9628cf3401e0177, type: 2}
   Lit: {fileID: 2100000, guid: 911375d008657904abe4b818bcdc334c, type: 2}
   statingState: 0
+  flickering: 0
 --- !u!114 &114000012137909190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1170,9 +1218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMat: {fileID: 2100000, guid: 911375d008657904abe4b818bcdc334c, type: 2}
-  highListMat: {fileID: 2100000, guid: cc7fb6dbd16879f4e8cfef8e2ec2b374, type: 2}
   Player: {fileID: 0}
-  MoveVector: {x: 0, y: 0, z: 0}
+  MoveVector: {x: 0.2, y: 0, z: 0}
   LM:
     serializedVersion: 2
     m_Bits: 1024
@@ -1188,7 +1235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe297d10bf8d0f4188b4ab5d9ed7939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bail: {fileID: 1000013579135584, guid: b37d5e44e2f89d445ae8ddaead9b5be6, type: 2}
+  bail: {fileID: 1000011403685816, guid: ac0d585e563f08648ac269e0e62ef030, type: 2}
   AmountOfItems: 0
   Lights:
   - {fileID: 114000013942684584}
@@ -1196,7 +1243,7 @@ MonoBehaviour:
   - {fileID: 114000010781817724}
   - {fileID: 114000012071157520}
   - {fileID: 114000011331146866}
-  door: {fileID: 0}
+  door: {fileID: 1000014235967794}
   doorOpenLoc: {fileID: 1000010282638088}
   doorClosePos: {fileID: 1000013377391856}
   opening: 0
@@ -1215,6 +1262,7 @@ MonoBehaviour:
   Def: {fileID: 2100000, guid: 980107a487bb71c4b9628cf3401e0177, type: 2}
   Lit: {fileID: 2100000, guid: 911375d008657904abe4b818bcdc334c, type: 2}
   statingState: 0
+  flickering: 0
 --- !u!114 &114000013942684584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1229,6 +1277,7 @@ MonoBehaviour:
   Def: {fileID: 2100000, guid: 980107a487bb71c4b9628cf3401e0177, type: 2}
   Lit: {fileID: 2100000, guid: 911375d008657904abe4b818bcdc334c, type: 2}
   statingState: 0
+  flickering: 0
 --- !u!136 &136000010804914384
 CapsuleCollider:
   m_ObjectHideFlags: 1
