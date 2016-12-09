@@ -16,9 +16,11 @@ public static class GameState {
 	
 
     /*TODO:
-     * restric velocity.
-     * change ray shoot origin
-     * sprint?
+     * restric velocity. done
+     * change ray shoot origin done
+     * sprint? done
+     * 
+     * potential scale gun problem?
      * 
      * 
      * wishlist
