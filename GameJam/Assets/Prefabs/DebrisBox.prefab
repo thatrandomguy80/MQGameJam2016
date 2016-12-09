@@ -253,7 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScaleUp: 1
   ScaleDown: 0
-  ScaleUpAmount: 1
+  ScaleUpAmount: 8
   ScaleDownAmount: 0
 --- !u!114 &114000013456286646
 MonoBehaviour:

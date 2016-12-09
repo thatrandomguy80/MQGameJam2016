@@ -20,7 +20,7 @@ public class GunManager : MonoBehaviour {
 
 
 	private bool recoil, recoilDir;
-	private float recoilSpeed = 2;
+	private float recoilSpeed = 4;
 
 
     // Use this for initialization

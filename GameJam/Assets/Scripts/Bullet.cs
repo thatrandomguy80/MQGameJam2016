@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+//Author: Hayden Munday.
+//Description: Bullet pushes itself and rotates then destroys itself after x amount of time
 
 [RequireComponent(typeof(Rigidbody))]
 public class Bullet : MonoBehaviour {
