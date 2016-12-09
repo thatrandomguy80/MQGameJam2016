@@ -8,6 +8,7 @@ public class ShrinRay : MonoBehaviour {
 
     public GameObject BulletPrefab;
     public bool grow = false, shrink = false;//if the scale change is positive or neg
+    public Transform ShootSpawnLoc;
 
     private GunManager gunManager;
     // Use this for initialization
@@ -36,7 +37,7 @@ public class ShrinRay : MonoBehaviour {
                     }
                 }
                 Debug.DrawLine(transform.position, transform.position + (transform.parent.forward), Color.red, 20);
-                Instantiate(BulletPrefab, transform.position + transform.parent.forward, transform.parent.rotation);
+                Instantiate(BulletPrefab, ShootSpawnLoc.position - ShootSpawnLoc.forward, transform.parent.rotation);
             }
         }
     }
