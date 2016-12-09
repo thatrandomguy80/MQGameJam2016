@@ -16,9 +16,6 @@ public static class GameState {
 	
 
     /*TODO:
-     * fix rotating object problem. Might be fixed now.
-     * rig all rooms with light. 
-     * rig functional parts.
      * restric velocity.
      * change ray shoot origin
      * sprint?
