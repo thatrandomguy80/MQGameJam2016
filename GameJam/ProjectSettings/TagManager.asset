@@ -7,6 +7,7 @@ TagManager:
   - Objects
   - nothing
   - Scrap
+  - Part
   layers:
   - Default
   - TransparentFX

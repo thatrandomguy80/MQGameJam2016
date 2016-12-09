@@ -5,6 +5,7 @@ using System.Collections;
 //Description: Sets gun mode in this order grab>shrink>grow>grab
 public class GunManager : MonoBehaviour {
 
+	public GameObject GunModel;
     public GameObject auroa;
     public Grab grabber;
 
@@ -14,6 +15,12 @@ public class GunManager : MonoBehaviour {
     public GunMode currMode;
 
     public Transform defaultPos,RightLock;
+
+	public Transform GunPos,RecoilPos;
+
+
+	private bool recoil, recoilDir;
+	private float recoilSpeed = 2;
 
 
     // Use this for initialization
@@ -44,7 +51,28 @@ public class GunManager : MonoBehaviour {
             currMode.ChangeMode();
             currMode = currMode.nextMode;
         }
+		//recoil
+		if (Input.GetMouseButtonDown (0) && currMode != grab && !recoil) {
+			recoil = true;
+		}
+		if (recoil) {
+			RecoilLoop();
+		}
     }
+	public void RecoilLoop(){
+		if (!recoilDir) {//move backwards
+			GunModel.transform.position = Vector3.Lerp (GunModel.transform.position, RecoilPos.position, Time.deltaTime * recoilSpeed);
+			if (Vector3.Distance (GunModel.transform.position, RecoilPos.position) < 0.1f) {
+				recoilDir = !recoilDir;
+			}
+		} else {
+			GunModel.transform.position = Vector3.Lerp (GunModel.transform.position,GunPos.position, Time.deltaTime * recoilSpeed);
+			if (Vector3.Distance (GunModel.transform.position, GunPos.position) < 0.1f) {
+				recoilDir = !recoilDir;
+				recoil = false;
+			}
+		}
+	}
 
 
 }

@@ -7,7 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(GravityAffector))]
 [RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(MeshRenderer))]
-public class Object : MonoBehaviour {
+public class ObjectTest : MonoBehaviour {
     [Header("Can they Scale? only 1 at a time please")]
     public bool ScaleUp, ScaleDown;//can they scale?
     [Header("by how much")]
@@ -16,6 +16,8 @@ public class Object : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gameObject.tag = "Objects";
+		GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(0,0.5f),
+			Random.Range(0,0.5f),Random.Range(0,0.5f)));//add random force at start.
     }
 	
 	// Update is called once per frame

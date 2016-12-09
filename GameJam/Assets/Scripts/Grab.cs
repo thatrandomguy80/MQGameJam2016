@@ -25,6 +25,7 @@ public class Grab : MonoBehaviour {
     public GameObject heldObject = null;
     public bool grabbing = false;
     public string objectsTagName = "Objects";
+	public string objectsTagName2 = "Part";
     public GunManager gunManager;//added -hm
     private GameObject firstobject;
     public GameObject snapPoint;
@@ -35,19 +36,30 @@ public class Grab : MonoBehaviour {
     //can add a list of all gameObjects that have Entered and remove the gameobjects from the list as they leave and only pick up the first gameobejct in the list
     void OnTriggerEnter(Collider other) {
 
-        if (grabbing == false && other.tag == objectsTagName && currentObject == null) {
+		if (grabbing == false  && currentObject == null && CheckTag(other)) {
             currentObject = other.gameObject;
         }
 
     }
     void OnTriggerExit(Collider other) {
         //if the currentobject leaves set to null
-        if (currentObject != null && other.tag == objectsTagName && currentObject.GetInstanceID() == other.gameObject.GetInstanceID()) {
+		if (currentObject != null  && currentObject.GetInstanceID() == other.gameObject.GetInstanceID() && CheckTag(other)) {
             currentObject = null;
 
         }
     }
-
+	public bool CheckTag(Collider Tag){
+		if (Tag.tag == objectsTagName || Tag.tag == objectsTagName2)
+			return true;
+		else
+			return false;
+	}
+	public bool CheckTag2(GameObject Tag){
+		if (Tag.tag == objectsTagName || Tag.tag == objectsTagName2)
+			return true;
+		else
+			return false;
+	}
     // Update is called once per frame
     void Update() {
 		//grab
@@ -57,7 +69,7 @@ public class Grab : MonoBehaviour {
                 *       set currently grabbing flag.*/
 		//added to fix parts not clearing bug-hm
         if (grabbing == false && currentObject != null ) {
-			if (currentObject.tag != objectsTagName) {
+			if (!CheckTag2(currentObject)) {
 				currentObject = null;
 				heldObject = null;
 				stopMove = false;
@@ -107,7 +119,7 @@ public class Grab : MonoBehaviour {
         }
 
 		//rotation
-        if (Input.GetKey(KeyCode.Q)) {
+		if (Input.GetKey(KeyCode.Q) && grabbing) {
             //These might need to be in world space.
             currentObject.transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal"), 0));
             currentObject.transform.Rotate(new Vector3(Input.GetAxis("MouseVertical"), 0, 0));
