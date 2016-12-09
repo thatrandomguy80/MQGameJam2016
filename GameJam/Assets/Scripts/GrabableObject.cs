@@ -14,6 +14,10 @@ public class GrabableObject : MonoBehaviour {
     public float ScaleUpAmount=0, ScaleDownAmount=0;
 
     private Rigidbody rb;
+    void Awake()
+    {
+        GameState.AmountOfObjects++;
+    }
 
     // Use this for initialization
     void Start () {
