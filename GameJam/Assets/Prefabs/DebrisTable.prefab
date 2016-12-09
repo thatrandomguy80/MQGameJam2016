@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49db714b442bd7b448cab94bedbb3dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScaleUp: 0
-  ScaleDown: 1
-  ScaleUpAmount: 0
-  ScaleDownAmount: 3
+  ScaleUp: 1
+  ScaleDown: 0
+  ScaleUpAmount: 5
+  ScaleDownAmount: 0
