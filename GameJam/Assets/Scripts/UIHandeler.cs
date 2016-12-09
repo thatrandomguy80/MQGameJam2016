@@ -9,8 +9,9 @@ public class UIHandeler : MonoBehaviour {
     private float fillAmount;//the fill amount we aim for 
 	// Use this for initialization
 	void Start () {
-		amountInLevel = GameObject.FindGameObjectsWithTag("Objects").Length - GameState.AmountOfDebris; //amountInLevel = GameObject.FindGameObjectsWithTag("Objects").Length - 1 - 4 - (GameState.AmountOfDebris / 5) * 4; ;//minus 4 for every 5 small parts also in win and 4 for compenents to the panel.
-
+        //amountInLevel = GameObject.FindGameObjectsWithTag("Objects").Length - GameState.AmountOfDebris; 
+        amountInLevel = GameState.AmountOfObjects - ((GameState.AmountOfDebris / 5) * 4);//minus 4 for every 5 small parts also in win and 4 for compenents to the panel.
+        Debug.Log(GameState.AmountOfObjects - ((GameState.AmountOfDebris / 5) * 4));
         //need this for other non scripted section
         //Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Water"), LayerMask.NameToLayer("Default"), true);
     }

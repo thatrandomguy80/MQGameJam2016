@@ -8,6 +8,7 @@ public class ShrinRay : MonoBehaviour {
 
     public GameObject BulletPrefab;
     public bool grow = false, shrink = false;//if the scale change is positive or neg
+    public Transform ShootSpawnLoc;
 
     private GunManager gunManager;
     // Use this for initialization
@@ -36,13 +37,13 @@ public class ShrinRay : MonoBehaviour {
                     }
                 }
                 Debug.DrawLine(transform.position, transform.position + (transform.parent.forward), Color.red, 20);
-                Instantiate(BulletPrefab, transform.position + transform.parent.forward, transform.parent.rotation);
+                Instantiate(BulletPrefab, ShootSpawnLoc.position - ShootSpawnLoc.forward, transform.parent.rotation);
             }
         }
     }
 
     public void applyScaling(GameObject GO) {
-        Object objScript = GO.GetComponent<Object>();
+        GrabableObject objScript = GO.GetComponent<GrabableObject>();
         if (grow && objScript.ScaleUp) {
             GO.transform.localScale += new Vector3(objScript.ScaleUpAmount, objScript.ScaleUpAmount, objScript.ScaleUpAmount);
             objScript.ScaleUp = false;

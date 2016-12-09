@@ -5,6 +5,8 @@ using System.Collections;
 //no longer mono
 public static class GameState {
 
+    public static int AmountOfObjects;
+
     public static int AmountOfDebris;
 
     public static int objectsRemaining;
@@ -16,15 +18,18 @@ public static class GameState {
 	
 
     /*TODO:
-     * fix rotating object problem. 
-     * rig all rooms with light. 
-     * rig functional parts.
+     * restric velocity. done
+     * change ray shoot origin done
+     * sprint? done
+     * 
+     * potential scale gun problem?
      * 
      * 
      * wishlist
-     * add inital movement to items
-     * animate shooting somehow.
-     * animate button pushs
+     * reticle
+     * add inital movement to items Done
+     * animate shooting somehow. make recoil?. almost done needs tweaking.
+     * animate button pushs Done
      */
 
 }

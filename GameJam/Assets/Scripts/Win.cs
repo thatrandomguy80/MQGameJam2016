@@ -14,7 +14,7 @@ public class Win : MonoBehaviour {
 	void Start () {
         //List =  GameObject.FindGameObjectsWithTag("Objects");
         //find the number of Objects in level
-		objectsOnLevel = GameObject.FindGameObjectsWithTag("Objects").Length - GameState.AmountOfDebris; // objectsOnLevel = GameObject.FindGameObjectsWithTag("Objects").Length -1 - 4 - (GameState.AmountOfDebris/5)*4;//minus 4 for every 5 small parts also in UIHandeler - hm
+		objectsOnLevel = GameState.AmountOfObjects - ((GameState.AmountOfDebris / 5) * 4); // objectsOnLevel = GameObject.FindGameObjectsWithTag("Objects").Length -1 - 4 - (GameState.AmountOfDebris/5)*4;//minus 4 for every 5 small parts also in UIHandeler - hm
         //running this once at start for UI init - hm
         objectsRemainingInLevel = objectsOnLevel - objectsInTrigger;
         GameState.objectsRemaining = objectsRemainingInLevel;

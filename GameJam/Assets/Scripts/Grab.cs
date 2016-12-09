@@ -119,10 +119,10 @@ public class Grab : MonoBehaviour {
         }
 
 		//rotation
-        if (Input.GetKey(KeyCode.Q)) {
+		if (Input.GetKey(KeyCode.Q) && grabbing) {
             //These might need to be in world space.
-            currentObject.transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal"), 0));
-            currentObject.transform.Rotate(new Vector3(Input.GetAxis("MouseVertical"), 0, 0));
+            heldObject.transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal"), 0));
+            heldObject.transform.Rotate(new Vector3(Input.GetAxis("MouseVertical"), 0, 0));
         }
     }
 }
