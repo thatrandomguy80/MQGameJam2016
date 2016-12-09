@@ -16,6 +16,8 @@ public class Object : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gameObject.tag = "Objects";
+		GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(0,0.5f),
+			Random.Range(0,0.5f),Random.Range(0,0.5f)));//add random force at start.
     }
 	
 	// Update is called once per frame

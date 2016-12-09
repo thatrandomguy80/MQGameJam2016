@@ -16,15 +16,16 @@ public static class GameState {
 	
 
     /*TODO:
-     * fix rotating object problem. 
+     * fix rotating object problem. Might be fixed now.
      * rig all rooms with light. 
      * rig functional parts.
+     * change ray shoot origin
      * 
      * 
      * wishlist
-     * add inital movement to items
-     * animate shooting somehow.
-     * animate button pushs
+     * add inital movement to items Done
+     * animate shooting somehow. make recoil?. almost done needs tweaking.
+     * animate button pushs Done
      */
 
 }
